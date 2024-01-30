@@ -62,9 +62,9 @@
 		  <div class="collapse navbar-collapse" id="navbarmain">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link text-light" href="index.html">Home</a>
+				<a class="nav-link text-light" href="{{ route('main') }}">Home</a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+			   <li class="nav-item"><a class="nav-link text-light" href="{{ route('about') }}">About</a></li>
 			    <li class="nav-item"><a class="nav-link text-light" href="service.html">Services</a></li>
 
 			    <li class="nav-item dropdown">
