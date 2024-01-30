@@ -51,7 +51,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navigation nav-glass" id="navbar">
 		<div class="container">
-		 	 <a class="navbar-brand" href="index.html">
+		 	 <a class="navbar-brand" href="{{ route('main') }}">
 			  	<img class="main-logo" src="  {{ asset('assets/images/logo.png') }}" alt="" class="img-fluid">
 			  </a>
 
@@ -65,34 +65,34 @@
 				<a class="nav-link text-light" href="{{ route('main') }}">Home</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link text-light" href="{{ route('about') }}">About</a></li>
-			    <li class="nav-item"><a class="nav-link text-light" href="service.html">Services</a></li>
+			    <li class="nav-item"><a class="nav-link text-light" href="{{ route('services') }}">Services</a></li>
 
 			    <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle text-light" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item " href="department.html">Departments</a></li>
-						<li><a class="dropdown-item " href="department-single.html">Department Single</a></li>
+						<li><a class="dropdown-item " href="{{ route('department') }}">Departments</a></li>
+						<li><a class="dropdown-item " href="{{ route('department-single') }}">Department Single</a></li>
 					</ul>
 			  	</li>
 
 			  	<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle text-light" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item " href="doctor.html">Doctors</a></li>
-						<li><a class="dropdown-item " href="doctor-single.html">Doctor Single</a></li>
-						<li><a class="dropdown-item " href="appoinment.html">Appoinment</a></li>
+						<li><a class="dropdown-item " href="{{ route('doctor') }}">Doctors</a></li>
+						<li><a class="dropdown-item " href="{{ route('doctor-single') }}">Doctor Single</a></li>
+						<li><a class="dropdown-item " href="{{ route('appoinment') }}">Appoinment</a></li>
 					</ul>
 			  	</li>
 
 			   <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle text-light" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown05">
-						<li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
+						<li><a class="dropdown-item" href="{{ route('blog-sidebar') }}">Blog with Sidebar</a></li>
 
-						<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
+						<li><a class="dropdown-item" href="{{ route('blog-single') }}">Blog Single</a></li>
 					</ul>
 			  	</li>
-			   <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+			   <li class="nav-item"><a class="nav-link text-light" href="{{ route('contact') }}">Contact</a></li>
 			</ul>
 		  </div>
 		</div>
