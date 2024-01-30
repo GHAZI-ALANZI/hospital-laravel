@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DepartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('index');})->name('main');
 Route::get('/about', function () {return view('about');})->name('about');
 Route::get('/services', function () {return view('services');})->name('services');
-Route::get('/department', function () {return view('department');})->name('department');
+Route::get('/department', [DepartController::class, 'index'])->name('department');
 Route::get('/department-single', function () {return view('department-single');})->name('department-single');
 Route::get('/doctor', function () {return view('doctor');})->name('doctor');
 Route::get('/doctor-single', function () {return view('doctor-single');})->name('doctor-single');
